@@ -1,0 +1,26 @@
+description : "knn, threesets strategy, threshold=10"
+
+k: [2]
+toy : "toy_orig"
+threshold: 10
+split_strategy: "threesets"
+similarity: "product_code"
+experiments:
+    - {features: [
+            "product_type_no",
+            "product_group_name",
+            "department_no",
+            "section_no",
+            ]}
+
+
+# ==== RESULTS ======
+Results_experiment_1:
+  k:
+  - 2
+  map_at_k_test:
+  - 0.0010504201680672268
+  map_at_k_train:
+  - 0.00026371308016877635
+  map_at_k_validation:
+  - 0.0004672897196261682

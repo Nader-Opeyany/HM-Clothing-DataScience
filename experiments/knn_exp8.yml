@@ -1,0 +1,18 @@
+description : "Showing error when threshold is too large"
+
+k: [2]
+toy : "toy500"     # name for the toy dataset
+threshold: 30
+split_strategy: "threesets"
+similarity: "department_no"
+experiments:
+    - {features: [
+            "product_type_no",
+            "product_group_name",
+            "department_no",
+            "section_no",
+            ]}
+
+
+# ==== RESULTS ======
+# AssertionError: WARNING: Less than 100 articles. Try reducing the threshold

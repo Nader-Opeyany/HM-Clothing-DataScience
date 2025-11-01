@@ -1,0 +1,92 @@
+description : "knn, standard strategy, threshold=50"
+
+#k: [2, 4, 5, 6, 8]
+k: [2]
+toy : "toy_orig"
+threshold: 50
+split_strategy: "standard"
+similarity: "product_code"
+experiments:
+    # - {features: [
+    #         "product_type_no",
+    #         "product_group_name",
+    #         "graphical_appearance_no",
+    #         "colour_group_code",
+    #         "perceived_colour_value_id",
+    #         "perceived_colour_master_id",
+    #         "department_no",
+    #         "index_code",
+    #         "index_group_no",
+    #         "section_no",
+    #         "garment_group_no",
+    #         ]}
+    - {features: [
+            "product_type_no",
+            "product_group_name",
+            "department_no",
+            "section_no",
+            ]}
+
+
+# ==== RESULTS ======
+## ArticleFeaturesSimpleFeatures
+
+#Results:
+#  k:
+#  - 2
+#  - 4
+#  - 5
+#  - 6
+#  - 8
+#  map_at_k_test:
+#  - 0.0005672726915769587
+#  - 0.0007935894415486252
+#  - 0.00043307410654349433
+#  - 0.0008467259394903179
+#  - 0.0005071166336240548
+#  map_at_k_validation:
+#  - 0.0004463567581360003
+#  - 0.0004920052490068964
+#  - 0.00026276182783596295
+#  - 0.00044307810988206375
+#  - 0.00020291215903418773
+
+## ArticleFeaturesSimpleFeaturesSubset1
+#Results:
+#  k:
+#  - 2
+#  - 4
+#  - 5
+#  - 6
+#  - 8
+#  map_at_k_test:
+#  - 0.0005727888033082838
+#  - 0.0005741943241943243
+#  - 0.00063192802524899
+#  - 0.0006886829243044456
+#  - 0.0005756792166810719
+#  map_at_k_validation:
+#  - 0.0006624107633168588
+#  - 0.0002517526405500046
+#  - 0.000382926305496322
+#  - 0.00032033681127585574
+#  - 0.00023412371538401197
+
+# ====== NEW RESULTS using articles.ArticleFeatureMungerSpecificFeatures() class =======
+# This took about 4 minutes
+Results_experiment_1:
+  k:
+  - 2
+  map_at_k_test:
+  - 0.0005672726915769587
+  map_at_k_validation:
+  - 0.0004463567581360003
+Results_experiment_2:
+  k:
+  - 2
+  map_at_k_test:
+  - 0.0005727888033082838
+  map_at_k_validation:
+  - 0.0006624107633168589
+  minutes: 2.0883876333333333
+

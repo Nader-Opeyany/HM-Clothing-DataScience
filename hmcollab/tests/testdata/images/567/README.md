@@ -1,0 +1,2 @@
+# Test data directory with an image
+File `5678901234.jpg` was originally from [Wikipedia](https://en.wikipedia.org/wiki/File:Jacket_and_shawl_in_chintz,_skirt_in_glazed_printed_cotton,_1770-1800._MoMu_-_Fashion_Museum_Province_of_Antwerp,_www.momu.be._Photo_by_Hugo_Maertens,_Bruges..jpg)

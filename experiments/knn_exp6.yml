@@ -1,0 +1,27 @@
+description : "knn,threesets strategy,threshold=30, similarity=department_no"
+
+k: [2]
+toy : "toy1k"     # name for the toy dataset
+threshold: 2
+split_strategy: "threesets"
+similarity: "department_no"
+experiments:
+    - {features: [
+            "product_type_no",
+            "product_group_name",
+            "department_no",
+            "section_no",
+            ]}
+
+
+# ==== RESULTS ======
+Results_experiment_1:
+  k:
+  - 2
+  map_at_k_test:
+  - 0.0775886631077888
+  map_at_k_train:
+  - 0.07529251439739686
+  map_at_k_validation:
+  - 0.06988428363428363
+  minutes: 2.8327381333333337

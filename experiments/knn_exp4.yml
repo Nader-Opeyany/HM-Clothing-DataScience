@@ -1,0 +1,27 @@
+description : "knn,threesets strategy,threshold=30. Difference from exp3?"
+
+k: [2]
+toy : "toy_orig"
+threshold: 30
+split_strategy: "threesets"
+similarity: "product_code"
+experiments:
+    - {features: [
+            "product_type_no",
+            "product_group_name",
+            "department_no",
+            "section_no",
+            ]}
+
+
+# ==== RESULTS ======
+Results_experiment_1:
+  k:
+  - 2
+  map_at_k_test:
+  - 0.00254028379028379
+  map_at_k_train:
+  - 0.0021219579763883563
+  map_at_k_validation:
+  - 0.0016250342769034358
+  minutes: 4.759942683333334
