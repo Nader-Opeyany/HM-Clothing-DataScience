@@ -1,3 +1,5 @@
+''' Low chance any of this code is used or repurposed. Specific to the H&M challenge. '''
+
 from hmcollab import datasets
 from hmcollab import articles
 from hmcollab import models

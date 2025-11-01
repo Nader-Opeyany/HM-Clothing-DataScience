@@ -1,5 +1,5 @@
 # Data directory
-This directory will contain training and test files. Most files in it will not be checked in to git.
+There's too much data! All data I'm using is in the toy folder. 
 
 ## Original datasets from Kaggle:
 
@@ -20,6 +20,8 @@ articles.csv: 105,542 unique article's ID
 customers.csv:
  
 images:
+
+------The below sections are left for historical purposes------
 
 ## Our subsets: 
 REMOVED: target_set_7d75481u.csv 

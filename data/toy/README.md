@@ -1,3 +1,3 @@
 # Toy data directory
 
-This directory will contain a small fraction of the full dataset for development purposes.
+Used kaggle to export only a very small slice of the 34 gigabytes code.
