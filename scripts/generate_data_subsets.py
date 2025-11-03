@@ -16,11 +16,11 @@ def customer_split(dataset, customer_count):
     portion = splitter.CustomerPortion(selected_customers)
     return portion.split(dataset)
 
-
+#os.walk added to recursively search for data files
 def save_main_data(pruned_dataset, base_path):
-    customers_fn = directories.qualifyname(base_path, "customers.csv")
-    article_fn = directories.qualifyname(base_path, "articles.csv")
-    transaction_fn = directories.qualifyname(base_path, "transactions_train.csv")
+    customers_fn = directories.os.walk(base_path, "customers.csv")
+    article_fn = directories.os.walk(base_path, "articles.csv")
+    transaction_fn = directories.os.walk(base_path, "transactions_train.csv")
     pruned_dataset.customers.to_csv(customers_fn, index=False)
     pruned_dataset.articles.to_csv(article_fn, index=False)
     pruned_dataset.transactions.to_csv(transaction_fn, index=False)
