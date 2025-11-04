@@ -133,8 +133,8 @@ dmypy.json
 # ignore PyCharm generated files
 .idea/
 
-# ignore project specifc data and models
-data/*.csv
+# ********Changed this for test data *****ignore project specifc data and models
+#data/*.csv
 data/*/*.csv
 data/images
 hmcollab/tests/testdata/fivehundred/*.csv
